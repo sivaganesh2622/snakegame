@@ -1,0 +1,65 @@
+   /* Basic Reset */
+   body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the game container */
+.body {
+    display: flex;
+    background-image:url(s2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Score Box */
+#scoreBox {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Hi-Score Box */
+#hiscoreBox {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Game Board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(18, 20px);
+    grid-template-rows: repeat(18, 20px);
+    gap: 1px;
+    border: 2px solid #000;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Snake Styling */
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border: 1px solid #000;
+}
+
+/* Snake Head Styling */
+.head {
+    background-color: darkgreen;
+}
+
+/* Food Styling */
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid #000;
+}
